@@ -71,6 +71,11 @@
     "react": "16.8.0 || >=17.x",
     "react-dom": "16.8.0 || >=17.x"
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/proXDhiya/react-image-card"
