@@ -1,13 +1,13 @@
 {
   "name": "@proxdhiya/react-image-card",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.6",
   "type": "module",
   "description": "React Image Card",
   "scripts": {
     "dev": "vite --port 3000",
     "dev:host": "vite --host --port 3000",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
@@ -25,10 +25,18 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/react-vite-library.es.js",
-      "require": "./dist/react-vite-library.umd.js"
+      "import": "./dist/react-image-card.es.js",
+      "require": "./dist/react-image-card.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
+  },
+  "lib": {
+    "entry": "dist/react-image-card.es.js",
+    "formats": [
+      "es",
+      "umd"
+    ],
+    "fileName": "react-image-card"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
@@ -36,8 +44,8 @@
       "yarn  format"
     ]
   },
-  "main": "./dist/react-vite-library.umd.js",
-  "module": "./dist/react-vite-library.es.js",
+  "main": "./dist/react-image-card.umd.js",
+  "module": "./dist/react-image-card.es.js",
   "types": "./dist/index.d.ts",
   "dependencies": {
     "react": "^18.2.0",

@@ -1,4 +1,33 @@
-.text {
-  font-size: 20px;
-  color: red;
+@keyframes spin {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 0%;
+  }
+  20% {
+    background-position: 30% 15%;
+    background-size: 200%;
+  }
+  40% {
+    background-position: 60% 90%;
+    background-size: 150%;
+  }
+  60% {
+    background-position: 90% 30%;
+    background-size: 250%;
+  }
+  80% {
+    background-position: 30% 90%;
+  }
+  100% {
+    background-position: 0% 0%;
+    background-size: 300%;
+  }
 }

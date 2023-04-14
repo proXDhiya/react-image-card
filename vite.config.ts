@@ -28,6 +28,12 @@ export default defineConfig((configEnv) => ({
     },
     rollupOptions: {
       external: [...Object.keys(packageJson.peerDependencies)],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        }
+      },
     },
   },
 }))

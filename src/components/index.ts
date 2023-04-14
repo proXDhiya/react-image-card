@@ -1,3 +1,2 @@
-export type { IHelloWorld } from './HelloWorld'
-export { HelloWorld } from './HelloWorld'
-import './style.css'
+export type { IImageCard } from './ImageCard'
+export { ImageCard } from './ImageCard'
