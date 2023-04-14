@@ -1,7 +1,7 @@
 {
-  "name": "react-image-card",
-  "private": true,
-  "version": "0.0.1-dev",
+  "name": "@proxdhiya/react-image-card",
+  "private": false,
+  "version": "0.0.1",
   "type": "module",
   "description": "React Image Card",
   "scripts": {
@@ -13,7 +13,7 @@
     "lint:fix": "eslint --fix 'src/**/*.{jsx,ts,tsx}'",
     "format": "prettier --write src//**/*.{ts,tsx,css} --config ./.prettierrc",
     "prepare": "husky install",
-    "publish": "yarn build && yarn publish:package && yarn publish:docs"
+    "publish": "yarn build && npm publish --access public"
   },
   "husky": {
     "hooks": {
