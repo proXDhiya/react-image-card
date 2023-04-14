@@ -5,7 +5,8 @@
   "type": "module",
   "description": "React Image Card",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3000",
+    "dev:host": "vite --host --port 3000",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",

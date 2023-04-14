@@ -4,6 +4,5 @@
   "printWidth": 100,
   "singleQuote": true,
   "trailingComma": "all",
-  "bracketSpacing": true,
-  "maxLineLength": 100
+  "bracketSpacing": true
 }
