@@ -1,7 +1,7 @@
 {
   "name": "@proxdhiya/react-image-card",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "React Image Card",
   "scripts": {
